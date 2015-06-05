@@ -1,0 +1,51 @@
+<div class="fold fold_uno">   
+    <div class="container">       
+          <section>
+            <article class="bienvenido1">
+              <h1> ¡BIENVENIDO <%= session[:user].present? ? "#{User.find(session[:user]).name.capitalize}!" : "MONSTRUO!" %></h1>
+            </article>
+            <article class="big_button_container">
+              
+            </article>
+          </section>          
+      </div>
+</div>
+<div class="fold fold_dos">
+      <div class="container">
+        <section>
+            <article class="bienvenido">
+              <h1> Somos una comunidad que se encarga de hacer el mejor ranking de empanadas por barrios en Bogotá</h1>
+            </article>
+            <article class="big_button_container">
+              
+            </article>
+        </section>     
+    </div>
+ </div> 
+  <footer>
+      <div class="container">
+             <p>© Todos los derechos reservados 2015<br>
+             Bogotá, Colombia</p>
+      </div>
+  </footer>
+
+     <!--<a href="/users/new"> Crear nuevo monstruo</a> --><!--
+</div>        <div>
+        Si esta en otra carpeta tocaría escribirla como ´backgrounds/empanadaprueba.jpg' 
+       <img src="<%= asset_path 'empanadaprueba.jpg' %>" alt="Imagen de prueba">
+       </div>
+       -->      
+      
+
+<!-- <form action="">
+	<input type="text" class="Pnumber1">
+	<input type="text" class="Pnumber2">
+	<input type="submit">
+</form>
+
+<p class="p1">
+	Verde
+</p>
+<p class="p2">
+	Azul
+</p> -->

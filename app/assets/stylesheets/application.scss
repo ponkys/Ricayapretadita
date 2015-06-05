@@ -1,0 +1,226 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require libs/normalize
+ */
+
+@import "libs/breve";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100italic,700);
+
+html {	
+	font-size: 16px;
+	body {
+	height: 100%;
+	min-height: 100%;
+	font: normal 62.5% 'Lato', sans-serif;
+	}
+}
+
+.container {
+	display:block;
+	height:100%;
+	margin:0 auto;
+	
+	min-height:100%;
+	position:relative;
+	text-align:center;
+	width:100%;
+	max-width:1024px;
+}
+
+.fold {
+	display:inline-block;
+	background-size:100%;
+	min-height:100%;
+	width:100%;
+	// margin-bottom: -30px;
+}
+	header {
+		background-color: rgba(#FF3D00, 0.9);
+		display: inline-block;
+		width: 100%;
+		font-size: 1.8em;
+		position: fixed;	
+		box-shadow: 0px 0px 25px rgba(#888888, 0.7);
+		right: 0;
+		left: 0;
+		z-index: 10;
+		img {
+			height: 75px;
+			width: 75px;
+			float: left;
+			margin-left: 5px;
+		}
+		.links_basicos {
+			float: right;
+			padding: 0 60px 0 0;
+			margin: 15px;
+			
+			a {
+				text-decoration: none;
+				color: #2c2c2c;
+			}
+		}
+		.div_links_basicos {
+			width: 100%;
+			margin: o auto;
+			padding: 15px;
+			text-align: center;
+
+
+		}
+
+		nav {
+			margin: 0 auto;
+			
+
+			ul {
+				
+				padding: 0;
+				margin: 25px 15px 15px 15px;
+				float: left;
+				list-style-type: none;
+				li {
+					padding: 0;
+					display: inline-block;
+					a {
+						text-decoration: none;
+						color: #2c2c2c;
+						padding: 0 15px 0 15px;
+						text-size: 15px;
+						&:visited{
+							text-decoration: none;
+							color: #2c2c2c;
+						}
+						&:hover {
+							
+							color: #7A7A7A;
+						}
+					}
+							
+				}
+			}
+		}
+	}
+.fold_uno {
+			// background: url("CherryBlossoms.jpg") center top no-repeat;
+			background-color: white;
+				.bienvenido1 {
+					width: 100%;
+					font-size: 3.4em;
+					margin: 250px 15px 0px 30px;
+					color: rgba(#2f2f2f, .9);
+					border: 1px solid white;
+					padding: 10px;
+				} 
+					.big_button_container{
+						float: right;
+						margin: 325px 50px 0px 15px;
+						width: 30%;
+						a {
+							text-size: 24px;
+							text-shadow: 2px;
+							text-decoration: none;
+							background-color: rgba(white,0.2);
+							color: white;
+							border: 1px solid white;
+							padding: 5px 15px;
+							border-radius: 1px;
+							&:visited {
+								text-decoration: none;
+							}
+
+						}
+					}
+				}
+
+.fold_dos {
+		background: url("panoramica.jpg") center top no-repeat;
+			.bienvenido {
+				width: 100%;
+				font-size: 2.4em;
+				margin: 250px 0px 0px 0px;
+				color: white;
+				background-color: rgba(#28CC14, 0.2);
+				border: 1px solid white;
+				padding: 10px;
+			} 
+				.big_button_container{
+					width: 30%;
+					float: right;
+					margin: 300px 10px 150px 15px;
+				
+					a {
+						text-size: 24px;
+						text-shadow: 2px;
+						text-decoration: none;
+						background-color: rgba(white,0.2);
+						color: white;
+						border: 1px solid white;
+						padding: 5px 15px;
+						border-radius: 1px;
+						&:visited {
+							text-decoration: none;
+						}
+
+					}
+				}
+		}
+footer {
+		text-align: center;
+		padding: 10px;
+		background-color: #00FFBF;
+		clear: both;
+		margin-top: 20px;
+		p {
+			font-weight: 300;
+			font-size: .6em;
+		}
+	}
+
+#formas {
+	width: 350px;
+	margin: 0 auto;
+	
+}
+.field_with_errors {
+	display: inline-block;
+	input {
+		border: 1px solid red;
+	}
+}
+
+input {
+	border-radius: 5px;
+	outline: none;
+
+}
+
+fieldset {
+	border: none;
+
+}
+
+
+#application_controller {
+		
+		
+}
+
+/*
+.verde {
+	color: green;
+}
+
+.azul {
+	color:blue;
+}*/

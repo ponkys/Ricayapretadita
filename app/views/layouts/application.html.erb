@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rica y apretadita</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body id="<%= params[:controller].parameterize %>_controller">
+<header>
+	    <nav class="menu">
+	        <img src="<%= asset_path 'Ricayapretadita.png'%>" alt="logotemporal"/>
+	        <ul>
+	            <li><a href="/index/">Inicio</a></li>
+	            <li><a href="/sitios/">Sitios</a></li>
+	            <li><a href="/top10/">top10</a></li>
+	        </ul>
+	    </nav>
+	    <div class="div_links_basicos">
+	        <article class="links_basicos">
+	           <p>Crear Monstruo</p>
+	        </article>
+	        <article class="links_basicos">
+	           <p>Entrar</p>
+	        </article>
+	    </div>
+	</header>
+
+<%= yield %>
+
+</body>
+</html>
